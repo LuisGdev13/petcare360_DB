@@ -20,6 +20,6 @@ else
     exit 1
 fi
 
-echo "Executando javasprint3.sql no banco Oracle..."
-sql -L "$ORACLE_DB_USERNAME/$ORACLE_DB_PASSWORD@$CONNECT_STRING" "@/scripts/javasprint3.sql"
+echo "Executando script_bd..sql no banco Oracle..."
+sql -L "$ORACLE_DB_USERNAME/$ORACLE_DB_PASSWORD@$CONNECT_STRING" "@/scripts/script_bd.sql"
 echo "Script finalizado."
