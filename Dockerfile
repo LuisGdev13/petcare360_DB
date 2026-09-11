@@ -8,7 +8,7 @@ RUN apk add --no-cache curl unzip \
     && ln -s /opt/sqlcl/bin/sql /usr/local/bin/sql \
     && rm /tmp/sqlcl.zip
 
-COPY javasprint3.sql /scripts/javasprint3.sql
+COPY script_bd..sql /scripts/script_bd.sql
 COPY run-sql.sh /scripts/run-sql.sh
 
 RUN chmod +x /scripts/run-sql.sh
