@@ -20,6 +20,7 @@ else
     exit 1
 fi
 
-echo "Executando script_bd..sql no banco Oracle..."
+echo "Executando script_bd.sql no banco Oracle..."
+
 sql -L "$ORACLE_DB_USERNAME/$ORACLE_DB_PASSWORD@$CONNECT_STRING" "@/scripts/script_bd.sql"
 echo "Script finalizado."
